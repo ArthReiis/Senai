@@ -1,0 +1,43 @@
+package atividade;
+
+public class Calculadora {
+
+	double n1, n2;
+	
+	
+	public double soma(double n1, double n2) {
+		
+		double resultado = n1 + n2;
+		
+		return resultado;
+	}
+	
+
+public double subtrair(double n1, double n2) {
+	
+	double resultado = n1 - n2;
+	
+	return resultado;
+	
+}
+
+public double multiplicar(double n1, double n2) {
+	
+double resultado = n1 * n2;
+	
+	return resultado;
+	
+}
+
+public double dividir(double n1, double n2) {
+	
+double resultado = n1 / n2;
+	
+	return resultado;
+	
+}
+	
+	
+	
+	
+}
