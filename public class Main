@@ -1,0 +1,59 @@
+package atividade;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner ler = new Scanner(System.in);
+		Calculadora calc = new Calculadora();
+		int opcao;
+		System.out.println("Digite o primeiro número");
+		double numero = ler.nextDouble();
+
+
+		System.out.println("Digite o segundo número");
+		double numeroB = ler.nextDouble();
+	
+		System.out.println("Digite a operação desejada:");
+		System.out.println("1 - Soma");
+		System.out.println("2 - Subtrair");
+		System.out.println("3 - Multiplicar");
+		System.out.println("4 - Dividir");
+		opcao = ler.nextInt();
+		
+		switch (opcao) {
+		case 1: {
+
+			double resultado = calc.soma(numero, numeroB);
+			System.out.println(resultado);
+			break;
+		}
+		case 2: {
+
+			double resultado = calc.subtrair(numero, numeroB);
+			System.out.println(resultado);
+			break;
+		}
+		case 3: {
+			double resultado = calc.multiplicar(numero, numeroB);
+			System.out.println(resultado);
+			break;
+		}
+		case 4: {
+			double resultado = calc.dividir(numero, numeroB);
+			System.out.println(resultado);
+			break;
+		}
+		default: {
+			System.err.println("Opção inválida! Reinicie");
+		}
+
+		}
+
+
+
+	}
+
+}
